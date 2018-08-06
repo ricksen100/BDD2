@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.capgemini.product</groupId>
+  <artifactId>ProductApp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  	<!-- include the dependency here -->
+   <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.0.2</version>
+      <type>pom</type>
+    </dependency>
+    
+  
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <build>
+     <plugins>
+     <plugin>
+       	<!-- Add your plugin to specify default jdk as 1.8 --> 
+       	<groupId>org.codehaus.mojo</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>2.7.1</version>
+        </plugin>
+       </plugins>
+       </build>
+</project>
